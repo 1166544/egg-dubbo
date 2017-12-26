@@ -1,0 +1,66 @@
+{
+  "name": "egg-dubbo",
+  "version": "1.0.3",
+  "description": "egg.js dubbo service proxy middleware",
+  "eggPlugin": {
+    "name": "eggDubbo"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin"
+  ],
+  "dependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0",
+    "hessian.js": "^2.6.0",
+    "js-to-java": "^2.4.0",
+    "node-zookeeper-client": "^0.2.2"
+  },
+  "devDependencies": {
+    "autod": "^3.0.0",
+    "autod-egg": "^1.0.0",
+    "egg": "^2.0.0",
+    "egg-bin": "^4.3.0",
+    "egg-ci": "^1.8.0",
+    "egg-mock": "^3.13.0",
+    "eslint": "^4.11.0",
+    "eslint-config-egg": "^5.1.0",
+    "webstorm-disable-index": "^1.2.0",
+    "hessian.js": "^2.6.0",
+    "js-to-java": "^2.4.0",
+    "node-zookeeper-client": "^0.2.2"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "ci": {
+    "version": "8, 9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesliauw/egg-dubbo"
+  },
+  "bugs": {
+    "url": "https://github.com/jamesliauw/egg-dubbo/issues"
+  },
+  "homepage": "https://github.com/jamesliauw/egg-dubbo#readme",
+  "author": "James Liauw",
+  "license": "MIT"
+}
