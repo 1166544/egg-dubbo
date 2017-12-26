@@ -1,6 +1,6 @@
 {
   "name": "egg-dubbo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "egg.js dubbo service proxy middleware",
   "eggPlugin": {
     "name": "eggDubbo"
