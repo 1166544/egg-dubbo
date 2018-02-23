@@ -3,7 +3,7 @@
 module.exports = (options, app) => function * Processer(next) {
     const simulateKey = this.req.headers['x-request-simulate-key'] || '';
 
-    if (simulateKey) {
+    if (simulateKey && app.simulateData && app.simulateData[simulateKey]) {
         const simulateData = Object.assign(app.simulateData[simulateKey]);
     
         app.simulateData[simulateKey] = null;

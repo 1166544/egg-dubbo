@@ -14,5 +14,7 @@ module.exports = {
     SIZE: 'b',
     SCRIPT_CACHE_KEY: 'script_code',
     DUBBO_ERROR: 'Dubbo service error: ',
-    DUBBO_MESSAGE: 'dubbo service message'
+    DUBBO_MESSAGE: 'dubbo service message',
+    DUBBO_INIT: 'dubbo init message',
+    DUBBO_READY: 'dubbo ready message'
 };

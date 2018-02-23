@@ -1,6 +1,6 @@
 {
   "name": "egg-dubbo",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "egg.js dubbo service proxy middleware",
   "eggPlugin": {
     "name": "eggDubbo"
@@ -11,6 +11,7 @@
     "egg-plugin"
   ],
   "dependencies": {
+    "assert": "^1.4.1",
     "autod": "^3.0.0",
     "autod-egg": "^1.0.0",
     "egg": "^2.0.0",
@@ -19,10 +20,10 @@
     "egg-mock": "^3.13.0",
     "eslint": "^4.11.0",
     "eslint-config-egg": "^5.1.0",
-    "webstorm-disable-index": "^1.2.0",
     "hessian.js": "^2.6.0",
     "js-to-java": "^2.4.0",
-    "node-zookeeper-client": "^0.2.2"
+    "node-zookeeper-client": "^0.2.2",
+    "webstorm-disable-index": "^1.2.0"
   },
   "devDependencies": {
     "autod": "^3.0.0",

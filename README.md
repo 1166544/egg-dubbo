@@ -69,7 +69,7 @@ see [config/config.default.js](config/config.default.js) for more detail.
 
 ## Example
 #### 1.存放服务文件于app/service/rpc目录
-<img src="docs/assets/image1.png">
+![Service Preview Gif 1](./docs/assets/image1.png "Service Preview Gif 1")
 
 #### 2.每个服务文件格式,以GoodsRpcService.js为例：
 ```js
@@ -167,7 +167,7 @@ module.exports = (app) => {
 ```
 
 ### 本地Charles调试输出
-<img src="docs/assets/image2.png">
+![Invoke Preview Gif 1](./docs/assets/image2.png "Invoke Preview Gif 1")
 
 
 ## Questions & Suggestions

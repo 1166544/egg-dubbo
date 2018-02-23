@@ -17,6 +17,8 @@ module.exports = (appInfo) => {
                 dubboVer: '2.5.3',
             },
         },
+        // 是否挂载到APP单例对像
+        app: true
     };
 
     // 本地服务模拟调用

@@ -126,7 +126,7 @@ module.exports = (app) => {
                     });
 
                 // 异常返回,打印日志
-                applyMethodInvoker["catch"]((err) => {
+                applyMethodInvoker['catch']((err) => {
                     let stackMessage = '';
 
                     if (err && err.stack) {

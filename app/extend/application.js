@@ -1,5 +1,4 @@
 const simulateEngine = require('../engine/SimulateEngine');
-const zookeeperEngine = require('../engine/ZookeeperEngine');
 const rpcEngine = require('../engine/RpcEngine');
 
 const ZOOKEEPER_ENGINE = Symbol('Application#zookeeperEngine');
@@ -62,11 +61,12 @@ module.exports = {
         return this.config.env === 'prod';
     },
 
-    startZookeeper() {
-        // 业务RPC服务
+    /**
+     * 单例启动RPC服务
+     */
+    startZookeeperService() {
         rpcEngine(this);
         simulateEngine(this);
-        zookeeperEngine(this);
     },
 
     /**
